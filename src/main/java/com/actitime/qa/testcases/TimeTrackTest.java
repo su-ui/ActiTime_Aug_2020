@@ -33,7 +33,7 @@ public class TimeTrackTest extends TestBase {
 	}
 	
 	
-	@Test(enabled=false)
+	@Test()
 	public void TimeTrackePageTitleTest()
 	{
 		String timeTrackPageTitle = timeTrackPage.validateTimeTrackPageTitle();
@@ -45,7 +45,7 @@ public class TimeTrackTest extends TestBase {
 	{
 		timeTrackPage.clickNewTask();
 		timeTrackPage.setNewCustomer();
-		timeTrackPage.enterCustomerName("Rashasi");
+		timeTrackPage.enterCustomerName("Rakkasi");
 		timeTrackPage.enterProjectName("RedDragon");
 		
 		timeTrackPage.enterFirstTaskName("HouseKeeping");
@@ -54,7 +54,7 @@ public class TimeTrackTest extends TestBase {
 		
 	}
 	
-	@AfterMethod(enabled=false)
+	@AfterMethod()
 	public void tearDown()
 	{
 		driver.close();
