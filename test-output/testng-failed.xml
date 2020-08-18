@@ -5,7 +5,7 @@
     <classes>
       <class name="com.actitime.qa.testcases.UsersPageTest">
         <methods>
-          <include name="clickAddNewUserTest"/>
+          <include name="createNewUserTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.actitime.qa.testcases.UsersPageTest -->

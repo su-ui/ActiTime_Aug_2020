@@ -49,6 +49,9 @@ public class TimeTrackPage extends TestBase{
 	@FindBy(xpath="//div[text()='Create Tasks']")
 	WebElement createTaskBtn;
 	
+	@FindBy(xpath="//div[text()='Users']")
+	WebElement usersTab;
+	
 	
 	
 
@@ -165,7 +168,18 @@ List<WebElement> elements = driver.findElements(By.xpath("//div[contains(@class,
 	public void clickCreateTaskBtn()
 	{
 		createTaskBtn.click();
+		
+	
 	}
+	
+	public UsersPage goToUsersPage() throws FileNotFoundException
+	{
+		usersTab.click();
+		
+		return new UsersPage();
+	}
+	
+	
 	
 	
 

@@ -1,7 +1,9 @@
 package com.actitime.qa.testcases;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -12,6 +14,7 @@ import com.actitime.qa.base.TestBase;
 import com.actitime.qa.pages.LoginPage;
 import com.actitime.qa.pages.TimeTrackPage;
 import com.actitime.qa.pages.UsersPage;
+import com.actitime.qa.util.TestUtil;
 
 public class UsersPageTest extends TestBase{
 	
@@ -33,9 +36,7 @@ public class UsersPageTest extends TestBase{
 		 
 		 timeTrackPage= loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		 
-		 usersPage=new UsersPage();
-		 
-		 usersPage.clickUserPage();
+		usersPage= timeTrackPage.goToUsersPage();
 		 
 		 String title = usersPage.titleOfUsersPage();
 		 
@@ -47,12 +48,18 @@ public class UsersPageTest extends TestBase{
 	}
 	
 	@Test
-	public void clickAddNewUserTest()
+	public void createNewUserTest() throws InvalidFormatException, IOException, InterruptedException
 	{
 		usersPage.clickNewUserBtn();
-		usersPage.enterUserDetails("Sur","Mur", "supri.mce@gmail.com");
+		usersPage.createNewUser("Sheet1");
+		
 		usersPage.selectDptDropdown("Quality Control");
+		
+		
+		
 	}
+	
+
 	
 	
 	
