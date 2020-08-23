@@ -6,6 +6,7 @@
       <class name="com.actitime.qa.testcases.UsersPageTest">
         <methods>
           <include name="createNewUserTest"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.actitime.qa.testcases.UsersPageTest -->

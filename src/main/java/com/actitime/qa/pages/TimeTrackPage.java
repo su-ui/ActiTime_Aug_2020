@@ -52,6 +52,9 @@ public class TimeTrackPage extends TestBase{
 	@FindBy(xpath="//div[text()='Users']")
 	WebElement usersTab;
 	
+	@FindBy(xpath="//span[text()='Patlu']")
+	WebElement clickPatlu;
+	
 	
 	
 
@@ -126,9 +129,9 @@ List<WebElement> elements = driver.findElements(By.xpath("//div[contains(@class,
 		
 	}
 	
-	public void enterCustomerName(String cnn)
+	public void enterCustomerName(String cb)
 	{
-		customerName.sendKeys(cnn);
+		customerName.sendKeys(cb);
 	}
 	
 	public void enterProjectName(String pn)
@@ -177,6 +180,12 @@ List<WebElement> elements = driver.findElements(By.xpath("//div[contains(@class,
 		usersTab.click();
 		
 		return new UsersPage();
+	}
+	
+	
+	public void clickPatluNewUser()
+	{
+		 clickPatlu.click();
 	}
 	
 	

@@ -1,5 +1,10 @@
 package com.actitime.qa.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -27,6 +32,8 @@ public class UsersPageTest extends TestBase{
 		// TODO Auto-generated constructor stub
 	}
 	
+	
+	
 	@BeforeMethod
 	public void setUp() throws FileNotFoundException
 	{
@@ -39,13 +46,10 @@ public class UsersPageTest extends TestBase{
 		usersPage= timeTrackPage.goToUsersPage();
 		 
 		 String title = usersPage.titleOfUsersPage();
-		 
+	 
 		 Assert.assertEquals(title, "actiTIME - User List","title do not match");
 	
-		 
-		 
-		 
-	}
+		 }
 	
 	@Test
 	public void createNewUserTest() throws InvalidFormatException, IOException, InterruptedException
@@ -53,9 +57,25 @@ public class UsersPageTest extends TestBase{
 		usersPage.clickNewUserBtn();
 		usersPage.createNewUser("Sheet1");
 		
-		usersPage.selectDptDropdown("Quality Control");
+		Thread.sleep(1000);
 		
+	
+		//usersPage.selectDropDownItem("Sales & Support");
 		
+		usersPage.clickSendIvitation();
+		
+		String text = usersPage.textOftheConfirmationMsg();
+		
+		Assert.assertEquals(text, "Invite one more user","Text of confirmation page doesnt match, verify");
+		
+		usersPage.clickCloseBtn();
+		
+     }
+	
+	@AfterMethod()
+	public void tearDown()
+	{
+		driver.close();
 		
 	}
 	

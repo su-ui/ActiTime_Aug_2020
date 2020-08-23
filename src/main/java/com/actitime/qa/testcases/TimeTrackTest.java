@@ -45,12 +45,16 @@ public class TimeTrackTest extends TestBase {
 	{
 		timeTrackPage.clickNewTask();
 		timeTrackPage.setNewCustomer();
-		timeTrackPage.enterCustomerName("Rakkasi");
+		timeTrackPage.enterCustomerName("Ranga");
 		timeTrackPage.enterProjectName("RedDragon");
 		
 		timeTrackPage.enterFirstTaskName("HouseKeeping");
 		timeTrackPage.selectTypeOfWork();
 		timeTrackPage.clickCreateTaskBtn();
+		
+		Thread.sleep(2000);
+		
+		timeTrackPage.clickPatluNewUser();
 		
 	}
 	

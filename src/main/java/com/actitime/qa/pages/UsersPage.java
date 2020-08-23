@@ -53,6 +53,12 @@ public class UsersPage extends TestBase{
 	@FindBy(xpath="//div[@class='item']")
 	WebElement selectDptOptions;
 	
+	@FindBy(xpath="//div[text()='Save & Send Invitation']")
+	WebElement saveAndSendBtn;
+	
+	@FindBy(xpath="(//span[text()='Close'])[1]")
+	WebElement closeBtn;
+	
 
 	public UsersPage() throws FileNotFoundException {
 		//super();
@@ -100,39 +106,76 @@ public class UsersPage extends TestBase{
 	   			String emailid= wb.getSheet(sheet).getRow(i).getCell(2).toString();
 	   			
 	   			emailAddress.sendKeys(emailid);
+	   			//click the dropdown
 	   			
-	   		//	WebDriverWait wait=new WebDriverWait(driver,20);
-	   		//	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//div[text()='Time-Track Approval Settings'])[1]"))));
+	   			Thread.sleep(1000);
+	   			String departmentName= wb.getSheet(sheet).getRow(i).getCell(3).toString();
 	   			
+	   			System.out.println(departmentName);
+	   			
+	   			driver.findElement(By.xpath("//div[@class='simpleListMenuButton components_userGroupSelectorMenu emptyList notEmpty']")).click();
+	   			
+	   			List<WebElement> elements = driver.findElements(By.xpath("//div[@class='item']"));
+	   			
+	   			for(WebElement ele:elements)
+	   			{
+	   				if(departmentName.isEmpty())
+	   				{
+	   					if(ele.getText().contains("-- department not assigned --"))
+	   					{
+	   						ele.click();
+	   						break;
+	   					}
+	   				}
+	   				else if(ele.getText().contains(departmentName))
+	   				{
+	   					
+	   					ele.click();
+	   					break;
+	   			}
+	   				else if(!ele.getText().contains(departmentName))
+	   				{
+	   					if(ele.getText().contains("new department"))
+	   					{
+	   						ele.click();
+	   						driver.findElement(By.xpath("(//input[@class='newGroupInput'])[2]")).sendKeys(departmentName);
+	   						break;
+	   					}
+	   				}
+	   				
+	   		  }
 	   		}
-		  
-		 
-		  
-	   		      
-	 }
+		  }
 	
-	
-	public void selectDptDropdown(String selectDpt) throws InterruptedException
-	
-	
+	public void clickSendIvitation()
 	{
-	    departmentDropdown.click();
+		saveAndSendBtn.click();
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//span[(text()='Invite one more user')]"))));
 		
-		//driver.findElement(By.xpath("//div[@class='simpleListMenuButton components_userGroupSelectorMenu emptyList notEmpty']")).click();
-		Thread.sleep(2000);
-		
-		List<WebElement> elements = driver.findElements(By.xpath("//div[@class='item']"));
-		
-		for(WebElement ele:elements)
-		{
-			if(ele.getText().contains(selectDpt))
-			{
-				ele.click();
-			}
-		}
+   }
+	
+	public String textOftheConfirmationMsg()
+	{
+		return driver.findElement(By.xpath("//span[(text()='Invite one more user')]")).getText();
+	}
+	
+	public void clickCloseBtn()
+	{
+		closeBtn.click();
 	}
 	
 	
 	
-
+	
+	
 }
+	
+	
+	
+
+	
+
+
+
+
