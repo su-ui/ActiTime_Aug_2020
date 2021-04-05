@@ -40,12 +40,12 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./DriverN/chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./DriverN/geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		

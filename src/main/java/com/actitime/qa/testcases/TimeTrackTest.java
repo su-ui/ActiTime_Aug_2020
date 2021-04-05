@@ -13,7 +13,7 @@ import com.actitime.qa.pages.LoginPage;
 import com.actitime.qa.pages.TimeTrackPage;
 
 public class TimeTrackTest extends TestBase {
-	
+
 	LoginPage loginPage;
 	TimeTrackPage timeTrackPage;
 
@@ -21,51 +21,44 @@ public class TimeTrackTest extends TestBase {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	@BeforeMethod
-	public void setUp() throws FileNotFoundException
-	{
+	public void setUp() throws FileNotFoundException {
 		initialization();
-		
-		 loginPage=new LoginPage();
-		 
-		 timeTrackPage= loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+
+		loginPage = new LoginPage();
+
+		timeTrackPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
-	
-	
+
 	@Test()
-	public void TimeTrackePageTitleTest()
-	{
+	public void TimeTrackePageTitleTest() {
 		String timeTrackPageTitle = timeTrackPage.validateTimeTrackPageTitle();
-		Assert.assertEquals(timeTrackPageTitle, "actiTIME - Enter Time-Track","Actual Title not matching with expected");
+		Assert.assertEquals(timeTrackPageTitle, "actiTIME - Enter Time-Track",
+				"Actual Title not matching with expected");
 	}
-	
-	@Test(priority=2)
-	public void createNewTaskTest() throws InterruptedException
-	{
+
+	@Test(priority = 2)
+	public void createNewTaskTest() throws InterruptedException {
 		timeTrackPage.clickNewTask();
 		timeTrackPage.setNewCustomer();
 		timeTrackPage.enterCustomerName("Ranga");
 		timeTrackPage.enterProjectName("RedDragon");
-		
+
 		timeTrackPage.enterFirstTaskName("HouseKeeping");
 		timeTrackPage.selectTypeOfWork();
 		timeTrackPage.clickCreateTaskBtn();
-		
+
 		Thread.sleep(2000);
-		
+
 		timeTrackPage.clickPatluNewUser();
-		
+
 	}
-	
+
 	@AfterMethod()
-	public void tearDown()
-	{
+	public void tearDown() {
 		driver.close();
-		
+
 	}
-	
-	
-	
-	
+
 }

@@ -64,6 +64,8 @@ public class UsersPageTest extends TestBase{
 		
 		usersPage.clickSendIvitation();
 		
+		TestUtil.screenshotWithDate( prop.getProperty("browser"),"createNewUserTest");
+		
 		String text = usersPage.textOftheConfirmationMsg();
 		
 		Assert.assertEquals(text, "Invite one more user","Text of confirmation page doesnt match, verify");
