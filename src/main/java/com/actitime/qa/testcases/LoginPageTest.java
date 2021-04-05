@@ -2,6 +2,7 @@ package com.actitime.qa.testcases;
 
 import java.io.FileNotFoundException;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,6 +16,8 @@ public class LoginPageTest extends TestBase{
 	
 	LoginPage loginPage;
 	TimeTrackPage timeTrackPage;
+	
+	Logger log=Logger.getLogger(LoginPageTest.class.getName());
 	
 	
 	public LoginPageTest() throws FileNotFoundException {
@@ -36,6 +39,9 @@ public class LoginPageTest extends TestBase{
 	public void loginPageTitleTest()
 	{
 		String title = loginPage.validateLoginPageTitle();
+		
+		log.info("In Login Page");
+		
 		Assert.assertEquals(title, "actiTIME - Login","Actual Title matching with expected");
 	}
 	
@@ -112,6 +118,8 @@ public class LoginPageTest extends TestBase{
 	public void versionTest()
 	{
 		String actiTimeVersion = loginPage.validateVersion();
+		
+		log.info("Application version is  -->"+actiTimeVersion);
 		
 		Assert.assertEquals(actiTimeVersion, "actiTIME 2020 Online","There is no version number");
 	}

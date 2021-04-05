@@ -13,40 +13,40 @@ import com.actitime.qa.base.TestBase;
 public class LoginPage extends TestBase {
 
 	@FindBy(name = "username")
-	WebElement username;
+	private WebElement username;
 
 	@FindBy(name = "pwd")
-	WebElement password;
+	private WebElement password;
 
 	@FindBy(xpath = "//div[text()='Login ']")
-	WebElement loginBtn;
+	private WebElement loginBtn;
 
 	@FindBy(xpath = "//div[@class='atLogoImg']")
-	WebElement actiTimeLogo;
+	private WebElement actiTimeLogo;
 
 	@FindBy(xpath = "//div[@class='atProductName']")
-	WebElement prodName;
+	private WebElement prodName;
 
 	@FindBy(id = "toPasswordRecoveryPageLink")
-	WebElement forgotPwd;
+	private WebElement forgotPwd;
 
 	@FindBy(id = "keepMeLoggedInSection")
-	WebElement keepmeLoggedIn;
+	private WebElement keepmeLoggedIn;
 
 	@FindBy(xpath = "//nobr[text()='actiTIME 2020 Online']")
-	WebElement version;
+	private WebElement version;
 
 	@FindBy(id = "keepLoggedInCheckBox")
-	WebElement checkBox;
+	private WebElement checkBox;
 
 	@FindBy(xpath = "//*[contains(text(),'© ')]")
-	WebElement copyRight;
+	private WebElement copyRight;
 
 	@FindBy(xpath = "//a[@href='http://www.actitime.com']")
-	WebElement copyRightLink;
+	private WebElement copyRightLink;
 
 	@FindBy(id = "keepLoggedInCheckBox")
-	WebElement selectCheckBox;
+	private WebElement selectCheckBox;
 
 	public LoginPage() throws FileNotFoundException {
 		PageFactory.initElements(driver, this);

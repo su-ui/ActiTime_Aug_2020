@@ -2,94 +2,27 @@
 <testng-results skipped="8" failed="0" ignored="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67753" started-at="2021-04-05T13:08:50Z" finished-at="2021-04-05T13:09:57Z">
+  <suite name="Default suite" duration-ms="42636" started-at="2021-04-05T21:30:04Z" finished-at="2021-04-05T21:30:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="67753" started-at="2021-04-05T13:08:50Z" finished-at="2021-04-05T13:09:57Z">
+    <test name="Default test" duration-ms="42636" started-at="2021-04-05T21:30:04Z" finished-at="2021-04-05T21:30:47Z">
       <class name="com.actitime.qa.testcases.LoginPageTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="66913" started-at="2021-04-05T08:08:50Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="41063" started-at="2021-04-05T16:30:04Z" finished-at="2021-04-05T16:30:45Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -125,95 +58,37 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:8782/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="loginPageTitleTest()[pri:1, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="loginPageTitleTest" duration-ms="131" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="loginPageTitleTest()[pri:1, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="loginPageTitleTest" duration-ms="84" started-at="2021-04-05T16:30:45Z" finished-at="2021-04-05T16:30:45Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -249,99 +124,41 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:8782/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="actiTimeLogoAndProdNameTest()[pri:2, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="actiTimeLogoAndProdNameTest" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="actiTimeLogoAndProdNameTest()[pri:2, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="actiTimeLogoAndProdNameTest" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -377,99 +194,41 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:8782/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- actiTimeLogoAndProdNameTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="loginTest()[pri:3, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="loginTest" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="loginTest()[pri:3, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="loginTest" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.De.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -505,99 +264,41 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38937/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="forgotPwdLinkTest()[pri:4, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="forgotPwdLinkTest" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="forgotPwdLinkTest()[pri:4, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="forgotPwdLinkTest" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -633,99 +334,41 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38937/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="KeepMeLoggedInTest()[pri:5, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="KeepMeLoggedInTest" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="KeepMeLoggedInTest()[pri:5, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="KeepMeLoggedInTest" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -761,99 +404,41 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38937/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- KeepMeLoggedInTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="checkBoxTest()[pri:6, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="checkBoxTest" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="checkBoxTest()[pri:6, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="checkBoxTest" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -889,99 +474,41 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38937/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="copyRightTest()[pri:7, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="copyRightTest" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="copyRightTest()[pri:7, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="copyRightTest" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -1017,99 +544,41 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38937/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- copyRightTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="versionTest()[pri:8, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="versionTest" duration-ms="0" started-at="2021-04-05T08:09:57Z" finished-at="2021-04-05T08:09:57Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="SKIP" signature="versionTest()[pri:8, instance:com.actitime.qa.testcases.LoginPageTest@3ffc5af1]" name="versionTest" duration-ms="0" started-at="2021-04-05T16:30:46Z" finished-at="2021-04-05T16:30:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 85
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SAMSU-PC', ip: '192.168.0.11', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C7D383+3134339]
-	Ordinal0 [0x00B6A171+2007409]
-	Ordinal0 [0x00A0AEE8+569064]
-	Ordinal0 [0x0099139F+70559]
-	Ordinal0 [0x0098CC63+52323]
-	Ordinal0 [0x009B0DFC+200188]
-	Ordinal0 [0x009B0C1D+199709]
-	Ordinal0 [0x009AEB0B+191243]
-	Ordinal0 [0x00992E77+77431]
-	Ordinal0 [0x00993E3E+81470]
-	Ordinal0 [0x00993DC9+81353]
-	Ordinal0 [0x00B80CD9+2100441]
-	GetHandleVerifier [0x00DEB75A+1396954]
-	GetHandleVerifier [0x00DEB3D9+1396057]
-	GetHandleVerifier [0x00DF7126+1444518]
-	GetHandleVerifier [0x00DEBCE8+1398376]
-	Ordinal0 [0x00B77F51+2064209]
-	Ordinal0 [0x00B822EB+2106091]
-	Ordinal0 [0x00B82411+2106385]
-	Ordinal0 [0x00B949C4+2181572]
-	BaseThreadInitThunk [0x76E6338A+18]
-	RtlInitializeExceptionChain [0x778D9F72+99]
-	RtlInitializeExceptionChain [0x778D9F45+54]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
@@ -1145,9 +614,18 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38937/status] to be available after 20355 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 37 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- versionTest -->
