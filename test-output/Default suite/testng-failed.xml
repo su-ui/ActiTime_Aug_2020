@@ -5,16 +5,9 @@
     <classes>
       <class name="com.actitime.qa.testcases.LoginPageTest">
         <methods>
-          <include name="checkBoxTest"/>
-          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
-          <include name="actiTimeLogoAndProdNameTest"/>
           <include name="tearDown"/>
-          <include name="copyRightTest"/>
-          <include name="versionTest"/>
-          <include name="KeepMeLoggedInTest"/>
           <include name="setUp"/>
-          <include name="forgotPwdLinkTest"/>
         </methods>
       </class> <!-- com.actitime.qa.testcases.LoginPageTest -->
     </classes>

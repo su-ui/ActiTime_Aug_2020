@@ -13,6 +13,7 @@
   <test name="Test">
     <classes>
       <class name="com.actitime.qa.testcases.LoginPageTest"/>
+      <class name="com.actitime.qa.testcases.TimeTrackTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

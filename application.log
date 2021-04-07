@@ -1,0 +1,32 @@
+2021-04-05 18:55:24,940  INFO [main] LoginPageTest:47 - fiiiiiiii
+2021-04-05 18:55:24,949 FATAL [main] LoginPageTest:48 - jijijijj
+2021-04-05 18:55:24,950 ERROR [main] LoginPageTest:49 - ffffffff
+2021-04-05 18:55:42,643  INFO [main] LoginPageTest:68 - In Login Page
+2021-04-05 18:56:00,821  INFO [main] LoginPageTest:82 - Checking for Logo
+2021-04-05 18:56:28,894  INFO [main] LoginPageTest:165 - Successfully landed to time track page
+2021-04-05 18:57:59,220  INFO [main] LoginPageTest:154 - Application version is  -->actiTIME 2020 Online
+2021-04-05 18:59:35,317  INFO [main] LoginPageTest:68 - In Login Page
+2021-04-05 18:59:53,132  INFO [main] LoginPageTest:82 - Checking for Logo
+2021-04-05 19:00:19,633  INFO [main] LoginPageTest:165 - Successfully landed to time track page
+2021-04-05 19:01:45,552  INFO [main] LoginPageTest:154 - Application version is  -->actiTIME 2020 Online
+2021-04-06 09:38:19,175  INFO [main] LoginPageTest:47 - In Login Page
+2021-04-06 09:38:36,273  INFO [main] LoginPageTest:65 - Checking for Logo
+2021-04-06 09:39:00,777  INFO [main] LoginPageTest:148 - Successfully landed to time track page
+2021-04-06 09:40:16,260  INFO [main] LoginPageTest:137 - Application version is  -->actiTIME 2020 Online
+2021-04-06 11:55:57,345  INFO [main] LoginPageTest:47 - In Login Page
+2021-04-06 11:56:08,405  INFO [main] LoginPageTest:65 - Checking for Logo
+2021-04-06 11:57:10,100  INFO [main] LoginPageTest:148 - Successfully landed to time track page
+2021-04-06 11:58:03,643  INFO [main] LoginPageTest:137 - Application version is  -->actiTIME 2020 Online
+2021-04-06 11:58:04,986 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-04-06 11:58:04,988 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-04-06 11:58:04,991 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-04-06 11:58:04,995 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-04-06 11:58:04,996 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Samsu/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-04-06 11:58:06,126 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-04-06 11:58:06,127 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-04-06 11:58:06,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-04-06 11:58:06,133 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-04-06 11:58:06,139 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Samsu/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-04-06 13:21:55,179  INFO [main] LoginPageTest:47 - In Login Page
+2021-04-06 13:22:12,958  INFO [main] LoginPageTest:65 - Checking for Logo
+2021-04-06 13:23:46,277  INFO [main] LoginPageTest:137 - Application version is  -->actiTIME 2020 Online

@@ -2,6 +2,7 @@
 package com.actitime.qa.testcases;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 import com.actitime.qa.base.TestBase;
 import com.actitime.qa.pages.LoginPage;
 import com.actitime.qa.pages.TimeTrackPage;
+import com.actitime.qa.util.TestUtil;
 
 public class TimeTrackTest extends TestBase {
 
@@ -50,6 +52,13 @@ public class TimeTrackTest extends TestBase {
 		timeTrackPage.clickCreateTaskBtn();
 
 		Thread.sleep(2000);
+		
+		try {
+			TestUtil.screenshotWithDate(prop.getProperty("browser"), "createNewTaskTest");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		timeTrackPage.clickPatluNewUser();
 

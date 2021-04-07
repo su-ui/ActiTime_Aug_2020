@@ -1,6 +1,7 @@
 package com.actitime.qa.testcases;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 import com.actitime.qa.base.TestBase;
 import com.actitime.qa.pages.LoginPage;
 import com.actitime.qa.pages.TimeTrackPage;
+import com.actitime.qa.util.TestUtil;
 
 public class LoginPageTest extends TestBase{
 	
@@ -34,28 +36,41 @@ public class LoginPageTest extends TestBase{
 		
 		 loginPage=new LoginPage();
 	}
+	
+
+	
 	//Validating the title
 	@Test(priority=1)
-	public void loginPageTitleTest()
+	public void loginPageTitleTest() throws IOException
 	{
-		String title = loginPage.validateLoginPageTitle();
 		
 		log.info("In Login Page");
 		
-		Assert.assertEquals(title, "actiTIME - Login","Actual Title matching with expected");
+		
+		String title = loginPage.validateLoginPageTitle();
+		
+		TestUtil.screenshotWithDate( prop.getProperty("browser"),"loginPageTitleTest");
+		
+		
+		
+	   Assert.assertEquals(title, "actiTIME - Login","Actual Title matching with expected");
 	}
 	
 	
 	//validating logo and product name
 	@Test(priority=2)
-	public void actiTimeLogoAndProdNameTest()
+	public void actiTimeLogoAndProdNameTest() throws IOException
 	{
+		
+		log.info("Checking for Logo");
 		boolean logoPresent = loginPage.validateactiTimeLogo();
 		Assert.assertTrue(logoPresent,"Logo is not Present");
 		
 		boolean prodNamePresent = loginPage.validateProdName();
 		
 		//Assert.assertTrue(prodNamePresent);
+		
+		TestUtil.screenshotWithDate( prop.getProperty("browser"),"actiTimeLogoAndProdNameTest");
 		
 		Assert.assertTrue(prodNamePresent, "Yes, Product Name is not Present");
 		
@@ -129,6 +144,8 @@ public class LoginPageTest extends TestBase{
 	{
 		try {
 			timeTrackPage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+			
+			log.info("Successfully landed to time track page");
 		} catch (FileNotFoundException e) {
 		
 		}

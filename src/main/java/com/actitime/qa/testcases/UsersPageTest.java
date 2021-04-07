@@ -64,7 +64,7 @@ public class UsersPageTest extends TestBase{
 		
 		usersPage.clickSendIvitation();
 		
-		TestUtil.screenshotWithDate( prop.getProperty("browser"),"createNewUserTest");
+TestUtil.screenshotWithDate( prop.getProperty("browser"),"createNewUserTest");
 		
 		String text = usersPage.textOftheConfirmationMsg();
 		
